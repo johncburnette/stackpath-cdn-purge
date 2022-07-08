@@ -1,0 +1,21 @@
+name: "Stackpath CDN Purge"
+description: "Purges files from Stackpath CDN"
+branding:
+  icon: "trash"
+  color: "red"
+inputs:
+  clientId:
+    description: "Your Stackpath client ID"
+    required: true
+  clientSecret:
+    description: "Your Stackpath client secret"
+    required: true
+  stackId:
+    description: "The ID of the stack you want to purge in Stackpath"
+    required: true
+  urls:
+    description: "A string or list of urls to be purged in the CDN"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
