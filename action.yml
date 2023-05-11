@@ -13,6 +13,10 @@ inputs:
   stackId:
     description: "The ID of the stack you want to purge in Stackpath"
     required: true
+  purgeType:
+    description: "The type of purge to do. When set to list, urls are passed using a single string or a list of string urls. When set to fetch, a single url can be passed that will be fetched and read as json."
+  branch:
+    description: "An optional branch to be purged. Will default to main if not set"
   urls:
     description: "A string or list of urls to be purged in the CDN"
     required: true
